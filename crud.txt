@@ -1,3 +1,5 @@
+//Using system generated route
+
 //Get records from json
 curl -X GET -H "Content-Type: application/json" "http://localhost:3000/employee"
 curl -X GET -H "Content-Type: application/json" "http://localhost:3000/employee/3"
@@ -10,3 +12,18 @@ curl -X PUT -H "Content-Type: application/json" -d'{"name": "Ramya", "salary": 2
 
 //Delete record from json
 curl -X DELETE -H "Content-Type: application/json" "http://localhost:3000/employee/5"
+
+//Using Custom routes
+
+//Get records from json
+curl -X GET -H "Content-Type: application/json" "http://localhost:5000/employee"
+curl -X GET -H "Content-Type: application/json" "http://localhost:5000/employee/get/3"
+
+//Post record to json
+curl -X POST -H "Content-Type: application/json" -d'{"name": "Ramya", "salary": 2500}' "http://localhost:5000/employee/create"
+
+//Put(Update) record
+curl -X PUT -H "Content-Type: application/json" -d'{"name": "Ramya", "salary": 2000}' "http://localhost:5000/employee/update/5"
+
+//Delete record from json
+curl -X DELETE -H "Content-Type: application/json" "http://localhost:5000/employee/delete/5"
