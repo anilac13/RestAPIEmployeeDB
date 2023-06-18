@@ -1,6 +1,6 @@
 //Get records from json
-curl -X get -H "Content-Type: application/json" "http://localhost:3000/employee"
-curl -X get -H "Content-Type: application/json" "http://localhost:3000/employee/3"
+curl -X GET -H "Content-Type: application/json" "http://localhost:3000/employee"
+curl -X GET -H "Content-Type: application/json" "http://localhost:3000/employee/3"
 
 //Post record to json
 curl -X POST -H "Content-Type: application/json" -d'{"name": "Ramya", "salary": 2500}' "http://localhost:3000/employee"
