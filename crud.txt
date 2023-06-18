@@ -7,3 +7,6 @@ curl -X POST -H "Content-Type: application/json" -d'{"name": "Ramya", "salary": 
 
 //Put(Update) record
 curl -X PUT -H "Content-Type: application/json" -d'{"name": "Ramya", "salary": 2000}' "http://localhost:3000/employee/5"
+
+//Delete record from json
+curl -X DELETE -H "Content-Type: application/json" "http://localhost:3000/employee/5"
