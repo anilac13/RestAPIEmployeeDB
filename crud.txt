@@ -1,0 +1,3 @@
+//Get records from json
+curl -X get -H "Content-Type: application/json" "http://localhost:3000/employee"
+curl -X get -H "Content-Type: application/json" "http://localhost:3000/employee/3"

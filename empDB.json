@@ -11,12 +11,12 @@
       "salary": 1500
     },
     {
+      "id": 3,
       "name": "Lisa",
-      "salary": 8000,
-      "id": 3
+      "salary": 2000
     },
     {
-      "id": 4
+      "id": 4,
       "name": "Bheem",
       "salary": 2500
     }
