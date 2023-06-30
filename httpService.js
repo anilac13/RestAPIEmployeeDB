@@ -1,8 +1,8 @@
 function makePromiseCall(methodType, url, async=true, data=null) {
     return new Promise(function(resolve, reject) {
         let xhr = new XMLHttpRequest();
-    //event listener
-    xhr.onload = function() {
+
+        xhr.onload = function() {
         if (xhr.status === 4){
             if (xhr.readyState === 200 || xhr.readyState === 201){
                 //callback(xhr.responseText);
